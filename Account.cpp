@@ -4,22 +4,22 @@
 #include"Account.h"
 using namespace std;
 
-void Account::setName(string AccountName){
-  name = AccountName;
-}
+/*Account::Account(string accountName)
+: name(accountName)
+{
+	
+}*/
 
 string Account::getName() const {
 return name;
 }
-void Account::setPass(int num){
-pass = num;
-}
-int Account::getpass() const{
+
+int Account::getPass() const{
 return pass;
 }
-void Account::withdrawal (int withdrawalAmount) {
-if (withdrawalAmount > 0) {
-balance -= withdrawalAmount;
+void Account::deposit (int Amount) {
+if (depositAmount > 0) {
+balance += depositAmount;
 }
 }
 int Account::getBalance()const {

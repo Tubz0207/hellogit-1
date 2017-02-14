@@ -4,16 +4,15 @@
 class Account
 {
 public:
-    void setName(std::string AccountName);
-    std::string getName();
-    void setPass(int num);
-    int getPass();
-    void withdrawal(int withdrawlAmount);
-    int getBalance();
+    explicit Account(std::string accountName);
+    std::string getName() const;
+    int getPass() const;
+    void deposit(int depositAmount);
+    int getBalance() const;
 
 private:
-string name;
-int pass=1234;
+std::string name;
+int pass = 1234;
 int balance;
 };
 #endif
